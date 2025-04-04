@@ -33,6 +33,7 @@ public class Main {
         cart1.add(cheese,2);
         cart1.add(tv,3);
         cart1.add(scratchCard,4);
+        cart1.remove(scratchCard,2);
         ship(cart1.getItems());
         checkout(customer1,cart1);
 
@@ -49,7 +50,9 @@ public class Main {
 
         //Customer's Balance is Insufficient
 //        try{
-//            checkout(customer2,cart1);
+//            cart2.add(tv,10);
+//            ship(cart2.getItems());
+//            checkout(customer2,cart2);
 //        }
 //        catch(Exception e){
 //            System.out.println(e);
@@ -59,6 +62,7 @@ public class Main {
         //product is out of stock
 //        try{
 //        cart2.add(cheese,10);
+//        ship(cart2.getItems());
 //        checkout(customer2,cart2);
 //        }catch(Exception e){
 //            System.out.println(e);
@@ -68,6 +72,7 @@ public class Main {
         //product is Expired
 //        try{
 //            cart2.add(oldCheese,2);
+//            ship(cart2.getItems());
 //            checkout(customer2,cart2);
 //        }catch (Exception e){
 //            System.out.println(e);
