@@ -3,8 +3,7 @@ import Customer.Customer;
 import Product.Cheese;
 import Product.MobileScratchCard;
 import Product.TV;
-import Service.CheckoutService;
-import Service.ShippingService;
+
 
 import java.time.LocalDate;
 

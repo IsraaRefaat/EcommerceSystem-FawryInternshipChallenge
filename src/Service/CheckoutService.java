@@ -4,7 +4,6 @@ import Cart.Cart;
 import Customer.Customer;
 import Product.Product;
 import Product.ExpirableProduct;
-import java.util.List;
 import java.util.Map;
 
 public class CheckoutService {

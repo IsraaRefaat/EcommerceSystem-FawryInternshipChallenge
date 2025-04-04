@@ -3,14 +3,13 @@ package Service;
 
 import Product.Product;
 import Product.Shippable;
-import Product.ExpirableProduct;
 import java.util.Map;
 
 public class ShippingService {
 
     static double totalWeight = 0;
 
-    public static void ship(Map<Product,Integer> shippableItems) throws Exception {
+    public static void ship(Map<Product,Integer> shippableItems) {
         System.out.println("** Shipment notice **");
         for (Map.Entry<Product,Integer> entry : shippableItems.entrySet()) {
 
@@ -18,9 +17,6 @@ public class ShippingService {
 
             if(entry.getKey() instanceof Shippable)
             {
-                Shippable item = (Shippable)entry.getKey();
-
-                double weight = entry.getValue()*item.getWeight()*1000;
 
                 System.out.printf("%dx %s \t %.2fg%n", entry.getValue(),
                         entry.getKey().getName(),

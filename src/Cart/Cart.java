@@ -1,11 +1,7 @@
 package Cart;
 
 import Product.Product;
-import Product.Shippable;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Cart {
