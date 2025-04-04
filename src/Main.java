@@ -19,7 +19,7 @@ public class Main {
         Customer customer1= new Customer("Esra",5000);
         Customer customer2= new Customer("Ali",1000);
 
-        Cheese cheese= new Cheese("Cheese",50,5, LocalDate.of(2025,4,20),1);
+        Cheese cheese= new Cheese("Cheese",50,5, LocalDate.of(2025,4,30),1);
         Cheese oldCheese = new Cheese("Old Cheese",30,4, LocalDate.of(2025,4,1),.5);
 
         TV tv= new TV("TV",1000,100,20);
@@ -35,6 +35,7 @@ public class Main {
         cart1.add(scratchCard,4);
         ship(cart1.getItems());
         checkout(customer1,cart1);
+
 
         //send empty cart
 //        try{
@@ -62,6 +63,7 @@ public class Main {
 //        }catch(Exception e){
 //            System.out.println(e);
 //        }
+
 
         //product is Expired
 //        try{
